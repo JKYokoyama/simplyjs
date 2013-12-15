@@ -23,11 +23,11 @@ simply.setText({
   body: 'Bear with me ʕ•ᴥ•ʔ'
 }, true);
 
-x = { 
+e = { 
   button : 'select'
 });
 
-simply.on('singleClick', function(x))
+simply.on('singleClick', function(e))
   if(true) {
         simply.settext({body: 'Totes McGotes'})
   }
