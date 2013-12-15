@@ -26,6 +26,9 @@ simply.setText({
 simply.on('singleClick', function(e) {
   if(true) {
         simply.setText({body: 'Totes McGotes'});
+  }else {
+        simply.setText({ subtitle:'Q( >_*)-O)`,o)'})
+  }
   }
 });
 
