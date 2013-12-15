@@ -34,13 +34,13 @@ var change_text='punch';
 var fruitList=[
   'Q( o _o)p q(o.o )' ,
   'Q( >_*)-O)`,o)' ,
-  'mango' ,
-  'kiwi' ,
+  'k.o.' ,
+  'Loser' ,
   ];
   
   //math.floor(0.05 * 4) =
 
-ver fruitIndex = Math.random() * fruitlist.length;
+var fruitIndex = Math.random() * fruitlist.length;
 
 simply.on('singleClick', function(e) {
   if(e.button === 'select') {
