@@ -29,11 +29,22 @@ simply.on('singleClick', function(e) {
   }
 });
 
-var change_text
+var change_text='punch';
+
+var fruitList=[
+  'Q( o _o)p q(o.o )' ,
+  'Q( >_*)-O)`,o)' ,
+  'mango' ,
+  'kiwi' ,
+  ];
+  
+  //math.floor(0.05 * 4) =
+
+ver fruitIndex = Math.random() * fruitlist.length;
 
 simply.on('singleClick', function(e) {
   if(e.button === 'select') {
-        simply.setText({body: 'Q( >_*)-O)`,o'});
+        simply.setText({body: ''});
         simply.on('singleClick', function(e) {
   }else if (e.button === 'up') {
         simply.setText({ subtitle:'..Q( >_*)-O)`,o)..'})
