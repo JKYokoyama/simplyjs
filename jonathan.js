@@ -19,8 +19,9 @@ simply.on('accelTap', function(e) {
 });
 
 simply.setText({
-  title: 'BUahahaha Demo!',
-  body: 'This is a demo. Press buttons or tap the watch!',
+  title: 'Jonathan Demo!',
+  body: 'This is my rifle. There are many like it, but this one is mine. ' +
+        'My rifle is my best friend. It is my life. I must master it as I must master my life.'
 }, true);
 
 simply.begin();
