@@ -19,9 +19,8 @@ simply.on('accelTap', function(e) {
 });
 
 simply.setText({
-  title: 'Jonathan Demo!',
-  body: 'This is my rifle. There are many like it, but this one is mine. ' +
-        'My rifle is my best friend. It is my life. I must master it as I must master my life.'
+  title: 'Let\'s have some fun!',
+  body: 'Bear with me ʕ•ᴥ•ʔ'
 }, true);
 
 simply.begin();
