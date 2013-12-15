@@ -26,10 +26,15 @@ simply.setText({
 simply.on('singleClick', function(e) {
   if(true) {
         simply.setText({body: 'Totes McGotes'});
-  }else {
-        simply.setText({ subtitle:'Q( >_*)-O)`,o)'})
-  }
   }
 });
 
+var change_text
+
+simply.on('singleClick', function(e) {
+  if(e.button === 'select') {
+        simply.setText({body: 'Q( >_*)-O)`,o'});
+        simply.on('singleClick', function(e) {
+  }else if (e.button === 'up') {
+        simply.setText({ subtitle:'..Q( >_*)-O)`,o)..'})
 simply.begin();
