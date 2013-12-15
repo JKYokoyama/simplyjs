@@ -23,7 +23,7 @@ simply.setText({
   body: 'Bear with me ʕ•ᴥ•ʔ'
 }, true);
 
-e = { 
+e = {(
   button : 'select'
 });
 
