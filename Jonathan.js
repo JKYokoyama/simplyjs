@@ -19,15 +19,12 @@ simply.on('accelTap', function(e) {
   });
 });
 
-simply.setText({
-  title: 'Simply Demo!',
-  body: 'This is a demo. Press buttons or tap the watch!',
-}, true);
-
 simply.begin();
 */
 
-var change_text='punch';
+simply.setText({
+  title: 'Fight!',
+}, true);
 
 var fightList=[
   { title: 'Q( o _o)p q(o.o )'} ,
@@ -47,8 +44,8 @@ var getRandomIndex = function() {
   return fightIndex;
 };
 
-var updateFight = funtion() {
-  simply.setText({ body: fightList[fightIndex] });
+var updateFight = function() {
+  simply.setText(fightList[fightIndex]);
 };
 
 simply.on('singleClick', function(e) {
@@ -59,6 +56,7 @@ simply.on('singleClick', function(e) {
     updateFight();
   }else if (e.button === 'down') {
     if (++fightIndex >= fightList.length) { fightIndex = 0; }
+    updateFight();
   }
 });
 
