@@ -34,7 +34,7 @@ var map = [
 
 var pos = { x:2, y:2};
 
-vra dirs = [
+var dirs = [
 	{x: 0,y: 1 }, //N
 	{x: 1,y: 0 }, //E
 	{x: 0,y: -1 }, //S
