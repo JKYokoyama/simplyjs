@@ -48,16 +48,8 @@ var updateFight = function() {
   simply.setText(fightList[fightIndex]);
 };
 
-simply.on('longClick', function(e)
-  if (e.button ==='select') {
-    }else if (e.button === 'up') {
-      if (simply.setText({
-        title: 'Game On!', 
-)}, true);
-});
-
 simply.on('singleClick', function(e) {
-  if (e.button === 'select') {
+  if(e.button === 'select') {
   //Do nothing
   }else if (e.button === 'up') {
     if (--fightIndex < 0) { fightIndex = fightList.length - 1; }
@@ -69,4 +61,3 @@ simply.on('singleClick', function(e) {
 });
 
 simply.begin();
-
