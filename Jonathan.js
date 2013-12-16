@@ -60,4 +60,34 @@ simply.on('singleClick', function(e) {
   }
 });
 
+var map = [
+	['a', 'b', 'c', 'd', 'e', 'f']
+	['g', 'g', 'i', 'j', 'k', 'l']
+	['m', 'n', 'o', 'p', 'q', 'r']
+	['s', 't', 'u', 'v', 'w', 'x']
+	['y', 'z', 'x', 'x', 'x', 'x']
+	['x', 'x', 'x', 'x', 'x', 'x']
+];
+
+var pos = { x:2, y:2};
+
+vra dirs = [
+	{x: 0,y: 1 }, //N
+	{x: 1,y: 0 }, //E
+	{x: 0,y: -1 }, //S
+	{x: -1,y: 0 }, //W
+];
+
+var dirIndex = 0;
+
+var step = function() {
+	var dir = dirs{dirIndex}
+
+simply.on('singleClick' , function(e) {
+	switch (e.button) {
+	case 'select':
+		break'up':
+		console/log('2);
+
 simply.begin();
+
