@@ -35,17 +35,17 @@ var fightList=[
   ];
   
 //Math.random() -> 0.5
-//Math.random() * fruitList.length -> 2
+//Math.random() * fightList.length -> 2
 //Math.floor(2.232) = 2
 
-var fruitIndex = 0;
+var fightIndex = 0;
 
 var getRandomIndex = function() {
 
-var fruitIndex = Math.floor(Math.random() * fruitlist.length;
+var fightIndex = Math.floor(Math.random() * fightlist.length;
 };
 
-var upateFruit = funtion() {
+var updateFight = funtion() {
   simply.setText({body: fightList[fightIndex]});
 }
 
@@ -54,10 +54,10 @@ simply.on('singleClick', function(e) {
   //Do nothing
   }else if (e.button === 'up') {
     fightIndex--;
-    if (--fightIndex < 0) {fruitIndex = fightlist.length - 1;}
+    if (--fightIndex < 0) {fightIndex = fightlist.length - 1;}
   }else if (e.button === 'down') {
-    fruitIndex--;
-    if (--fightIndex < 0) {fruitIndex = fightlist.length + 1;}
+    fightIndex--;
+    if (--fightIndex < 0) {fightIndex = fightlist.length + 1;}
     
-simply.setText({body: fruitlist[fruitIndex]});
+simply.setText({body: fightlist[fightIndex]});
         simply.on('singleClick', function(e) {
