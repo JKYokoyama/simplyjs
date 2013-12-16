@@ -59,5 +59,7 @@ simply.on('singleClick', function(e) {
     fightIndex--;
     if (--fightIndex < 0) {fightIndex = fightlist.length + 1;}
     
-simply.setText({body: fightlist[fightIndex]});
-        simply.on('singleClick', function(e) {
+  }
+});
+
+simply.begin();
