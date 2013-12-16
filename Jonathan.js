@@ -48,7 +48,7 @@ var updateFight = function() {
   simply.setText(fightList[fightIndex]);
 };
 
-simply.on ('longclick', function(e))
+simply.on ('longClick', function(e))
   if (e.button ==='select') {
     else if (e.button === 'up') {
       if (simply.setText({
