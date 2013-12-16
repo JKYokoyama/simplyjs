@@ -23,7 +23,7 @@ simply.setText({
   body: 'This is a demo. Press buttons or tap the watch!',
 }, true);
 
-simply.on( 'longClick' , function(e) {
+if simply.on( 'longClick' , function(e) {
 	setText({
 		title: 'Hoorah!'
 		body: 'You are getting a little better at this',
