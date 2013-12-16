@@ -1,5 +1,6 @@
 console.log('Simply.js demo!');
 
+/*
 simply.on('singleClick', function(e) {
   console.log(util2.format('single clicked $button!', e));
   simply.setText({
@@ -24,7 +25,7 @@ simply.setText({
 }, true);
 
 simply.begin();
-
+*/
 
 var change_text='punch';
 
@@ -42,12 +43,12 @@ var fightList=[
 var fightIndex = 0;
 
 var getRandomIndex = function() {
-  var fightIndex = Math.floor(Math.random() * fightList.length;
+  var fightIndex = Math.floor(Math.random() * fightList.length);
   return fightIndex;
 };
 
 var updateFight = funtion() {
-  simply.setText({body: fightList[fightIndex]});
+  simply.setText({ body: fightList[fightIndex] });
 };
 
 simply.on('singleClick', function(e) {
