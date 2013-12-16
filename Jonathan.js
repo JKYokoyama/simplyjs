@@ -27,7 +27,7 @@ simply.setText({
 }, true);
 
 var fightList=[
-  { title: 'Q( o_o)p q(o.o )'} ,
+  { title: 'Q(o_o)p q(o.o )'} ,
   { title: 'Q( >_*)-O)`,<)'} ,
   { title: 'k.o.'} ,
   { title: 'Loser'} ,
