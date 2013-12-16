@@ -42,24 +42,22 @@ var fightList=[
 var fightIndex = 0;
 
 var getRandomIndex = function() {
-
-var fightIndex = Math.floor(Math.random() * fightlist.length;
+  var fightIndex = Math.floor(Math.random() * fightList.length;
+  return fightIndex;
 };
 
 var updateFight = funtion() {
   simply.setText({body: fightList[fightIndex]});
-}
+};
 
 simply.on('singleClick', function(e) {
-  if(e.button === 'select') {\
+  if(e.button === 'select') {
   //Do nothing
   }else if (e.button === 'up') {
-    fightIndex--;
-    if (--fightIndex < 0) {fightIndex = fightlist.length - 1;}
+    if (--fightIndex < 0) { fightIndex = fightList.length - 1; }
+    updateFight();
   }else if (e.button === 'down') {
-    fightIndex--;
-    if (--fightIndex < 0) {fightIndex = fightlist.length + 1;}
-    
+    if (++fightIndex >= fightList.length) { fightIndex = 0; }
   }
 });
 
