@@ -41,16 +41,4 @@ var dirs = [
 	{x: -1,y: 0 }, //W
 ];
 
-var dirIndex = 0;
-
-var step = function() {
-	var dir = dirs{dirIndex}
-
-simply.on('singleClick' , function(e) {
-	switch (e.button) {
-	case 'select':
-		break'up':
-		console/log('2);
-
-
 simply.begin();
