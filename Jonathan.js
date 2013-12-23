@@ -22,42 +22,27 @@ simply.on('accelTap', function(e) {
 simply.begin();
 */
 
-simply.setText({
-  title: 'Fight!',
-}, true);
+var VoteDialog = {};
 
-var fightList=[
-  { title: '(o_o)p q(o.o )'} ,
-  { title: 'Q( >_*)-O)`,<)'} ,
-  { title: 'k.o.'} ,
-  { title: 'Loser'} ,
-  ];
-  
-//Math.random() -> 0.5
-//Math.random() * fightList.length -> 2
-//Math.floor(2.232) = 2
-
-var fightIndex = 0;
-
-var getRandomIndex = function() {
-  var fightIndex = Math.floor(Math.random() * fightList.length);
-  return fightIndex;
+VoteDialog.show = function() {
+  simply.setText({
+    subtitle: 'Time to vote'
+  });
+  simply.on('singleClick', VoteDialog.onSingleClick);
 };
 
-var updateFight = function() {
-  simply.setText(fightList[fightIndex]);
-};
-
-simply.on('singleClick', function(e) {
-  if(e.button === 'select') {
-  //Do nothing
-  }else if (e.button === 'up') {
-    if (--fightIndex < 0) { fightIndex = fightList.length - 1; }
-    updateFight();
-  }else if (e.button === 'down') {
-    if (++fightIndex >= fightList.length) { fightIndex = 0; }
-    updateFight();
+VoteDialog.onSingleClick = function(e) {
+  var voted = false;
+  if (e.button === 'up') {
+    voted = true;
+  } else if (e.button === 'down') {
+    voted = true;
   }
-});
+  if (voted) {
+    simply.off('singleClick', VoteDialog.onSingleClick);
+  }
+};
+
+UI.VoteDialog = VoteDialog;
 
 simply.begin();
