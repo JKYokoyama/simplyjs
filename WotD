@@ -1,3 +1,6 @@
+var moment = require('moment')
+  , ajax = require('./ajax.node.js')
+  , simply = require('./simply.node.js');
 
 var wordUrl = 'http://dictionary.reference.com/wordoftheday'
 
@@ -8,4 +11,5 @@ ajax ({url:wordUrl}, function(data) {
   var defMatch = data.match(/<div class="defn">(.*?)<\/div>/);
   simply.text ({title:wordMatch[1],
                 subtitle:defMatch[1]});
-   
+                
+});
