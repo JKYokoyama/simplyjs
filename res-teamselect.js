@@ -17,7 +17,7 @@ TeamSelect.update = function() {
   var list = [];
   for (var i = 0; i < players.length ; ++i) {    
     var player = players[i];
-    var marker = player.isLeader? 'L': ' ';
+    var marker = ' ';
     if (i == TeamSelect.cursorIndex) {
       marker = 'o';
     }
@@ -31,6 +31,7 @@ TeamSelect.update = function() {
 };
 
 TeamSelect.show = function() {
+  simply.style('mono');
   simply.title('Team Select', true);
   TeamSelect.update();
 };
