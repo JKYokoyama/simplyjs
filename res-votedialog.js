@@ -1,5 +1,7 @@
 var UI = {};
 
+UI.Flow = {};
+
 var client = {};
 
 client.sendVote = function(vote) {
@@ -17,8 +19,6 @@ VoteDialog.show = function() {
 };
 
 VoteDialog.onSingleClick = function(e) {
-  simply.body(e.button);
-  return;
   var vote;
   if (e.button === 'up') {
     vote = 'accept';
