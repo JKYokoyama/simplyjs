@@ -4,6 +4,14 @@ UI.Flow = {};
 
 var TeamSelect = {};
 
+var players = [{
+    name: 'Jonathan'
+}, {
+    name: 'Duy'
+}, {
+    name: 'Huy'
+}];
+
 TeamSelect.update = function() {
   var list = [];
   for (var i = 0 ; i < players.length ; ++i) {    
@@ -18,12 +26,12 @@ TeamSelect.update = function() {
     list.push('[' + marker + ']' + ' ' + player.name);
   }
   list.push('done');
-  simply.setText({
-    body: list.join('\n')
-  });
+  simply.body(list.join('\n'));
 };
 
 TeamSelect.show = function() {
-  simply.setText({title: 'Team Select'});
+  simply.title('Team Select');
   TeamSelect.update();
 };
+
+TeamSelect.show();
