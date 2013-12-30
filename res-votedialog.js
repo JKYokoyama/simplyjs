@@ -1,9 +1,10 @@
-
-var moment = require('moment')
-  , ajax = require('../ajax.node.js')
-  , simply = require('../simply.node.js');
-
 var UI = {};
+
+var client = {};
+
+client.sendVote = function(vote) {
+  simply.subtitle(vote);
+};
 
 var VoteDialog = {};
 
