@@ -3,7 +3,7 @@ var UI = {};
 var client = {};
 
 client.sendVote = function(vote) {
-  simply.subtitle(vote);
+  simply.body(vote);
 };
 
 var VoteDialog = {};
@@ -17,6 +17,8 @@ VoteDialog.show = function() {
 };
 
 VoteDialog.onSingleClick = function(e) {
+  simply.body(e.button);
+  return;
   var vote;
   if (e.button === 'up') {
     vote = 'accept';
