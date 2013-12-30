@@ -2,10 +2,14 @@ var UI = {};
 
 UI.Flow = {};
 
+UI.Flow.onAuthResults = function(err, authResults) {
+  simply.body(JSON.stringify(authResults));
+};
+
 var client = {};
 
-client.sendVote = function(vote) {
-  simply.body(vote);
+client.sendVote = function(vote, callback) {
+  callback(null, { outcome: vote === 'accept' ? 'passed' : 'failed' });
 };
 
 var VoteDialog = {};
