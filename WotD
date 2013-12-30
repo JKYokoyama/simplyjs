@@ -16,11 +16,6 @@ simply.on('accelTap', function(e) {
   simply.subtitle('Tapped ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
 });
 
-simply.setText({
-  title: wordMatch,
-  body: defMatch,
-}, true);
-
 // node glue code
 
 var http = require('http')
