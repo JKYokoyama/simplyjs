@@ -4,7 +4,7 @@ var wordUrl = 'http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionary
 ajax({ url: wordUrl, type: 'json' }, function(data) {
     var words = [];
     for (var i = 0; i < data.length; ++i) {
-        words[i] = data[0].word;
+        words[i] = data[i].word;
     }
     simply.text({ body: words.join('\n') }, true);
 });
