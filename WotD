@@ -6,6 +6,6 @@ ajax ({url:wordUrl}, function(data) {
   var wordMatch = data.match(/<h2 class="me">(.*?)<\/h2>/);
   var defMatch = data.match(/<div class="defn">(.*?)<\/div>/);
   simply.text ({title:wordMatch[1],
-                subtitle:defMatch[1]});
+                subtitle:defMatch[1]}, true);
                 
 });
