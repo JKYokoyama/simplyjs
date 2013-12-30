@@ -16,9 +16,10 @@ simply.on('accelTap', function(e) {
   simply.subtitle('Tapped ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
 });
 
-var wordUrl = 'http://dictionary.reference.com/wordoftheday'
-
-// dictionary html scraping logic
+simply.setText({
+  title: 'Simply Demo!',
+  body: 'This is a demo. Press buttons or tap the watch!',
+}, true);
 
 ajax ({url:wordUrl}, function(data) {
   var wordMatch = data.match(/<h2 class="me">(.*?)<\/h2>/);
