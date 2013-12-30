@@ -14,13 +14,13 @@ var players = [{
 
 TeamSelect.update = function() {
   var list = [];
-  for (var i = 0 ; i < players.length ; ++i) {    
+  for (var i = 0; i < players.length ; ++i) {    
     var player = players[i];
     var marker = player.isLeader? 'L': ' ';
-    if (i == showGameState.cursorIndex) {
+    if (i == TeamSelect.cursorIndex) {
       marker = 'o';
     }
-    if (i == showGameState.selectedIndex) {
+    if (i == TeamSelect.selectedIndex) {
       marker = 'x';
     }
     list.push('[' + marker + ']' + ' ' + player.name);
