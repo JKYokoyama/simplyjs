@@ -1,4 +1,6 @@
-console.log('Simply.js demo!');
+var wordUrl = 'http://dictionary.reference.com/wordoftheday'
+
+// dictionary html scraping logic
 
 ajax ({url:wordUrl}, function(data) {
   var wordMatch = data.match(/<h2 class="me">(.*?)<\/h2>/);
