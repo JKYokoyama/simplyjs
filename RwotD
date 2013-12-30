@@ -1,12 +1,6 @@
-var wordUrl = 'http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=false&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1&limit=10&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5
-'
 
-// dictionary html scraping logic
+var wordUrl = 'http://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=false&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5';
 
-ajax ({url:wordUrl}, function(data) {
-  var wordMatch = data.match(/<h2 class="me">(.*?)<\/h2>/);
-  var defMatch = data.match(/<div class="defn">(.*?)<\/div>/);
-  simply.text ({title:wordMatch[1],
-                subtitle:defMatch[1]}, true);
-                
+ajax({ url: wordUrl }, function(data) {
+    simply.text({ title: data.word }, true);
 });
