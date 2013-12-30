@@ -30,7 +30,7 @@ TeamSelect.update = function() {
 };
 
 TeamSelect.show = function() {
-  simply.title('Team Select');
+  simply.title('Team Select', true);
   TeamSelect.update();
 };
 
