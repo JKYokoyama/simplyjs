@@ -17,8 +17,8 @@ simply.on('accelTap', function(e) {
 });
 
 simply.setText({
-  title: 'wordMatch',
-  body: 'defMatch',
+  title: wordMatch,
+  body: defMatch,
 }, true);
 
 // node glue code
