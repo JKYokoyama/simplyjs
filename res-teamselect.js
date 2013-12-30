@@ -5,7 +5,8 @@ UI.Flow = {};
 var TeamSelect = {};
 
 var players = [{
-    name: 'Jonathan'
+    name: 'Jonathan',
+    isLeader: true
 }, {
     name: 'Duy'
 }, {
